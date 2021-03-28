@@ -1,0 +1,22 @@
+!!!!!use mysql password="1234"!!!!!!!!!
+create database chirag;
+
+use chirag;
+
+create table train_detail
+(train_no  int(10) not null,
+cost int(10),
+starting_point varchar(50),
+destination varchar(60),
+via varchar(90),
+time_of_departure varchar(40),
+date_available varchar(88));
+
+create table user_information
+(unique_id int(30) primary key,
+uname varchar(40) not null,
+age int(90),
+gender varchar(50),
+train_no int(90),
+starting_point varchar(50),
+destination varchar(60));
